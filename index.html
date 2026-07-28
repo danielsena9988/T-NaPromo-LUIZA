@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Luiza das Promoções</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff2d9;
+    overflow-x: hidden;
+    position: relative;
+  }
+
+  .lz-bg {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    overflow: hidden;
+    pointer-events: none;
+  }
+
+  .lz-item {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    border-radius: 20px;
+    background: linear-gradient(145deg, #ffe14d 0%, #ff9d20 55%, #f26a00 100%);
+    border: 3px solid #fff2d9;
+    box-shadow: 0 8px 0 rgba(92, 43, 0, 0.35), 0 10px 22px rgba(255, 140, 0, 0.55);
+    opacity: 0.95;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 42px;
+    animation: lz-bounce 2.4s ease-in-out infinite;
+  }
+  .lz-item:nth-child(3n) { animation-delay: -0.4s; }
+  .lz-item:nth-child(4n) { animation-delay: -0.9s; }
+  .lz-item:nth-child(5n) { animation-delay: -1.4s; }
+
+  .lz-item::after {
+    content: "%";
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #ff2d55;
+    color: #fff;
+    font-family: Georgia, serif;
+    font-size: 14px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #fff2d9;
+  }
+
+  @keyframes lz-bounce {
+    0%, 100% { transform: translateY(0) rotate(-4deg) scale(1); }
+    50% { transform: translateY(-10px) rotate(4deg) scale(1.06); }
+  }
+
+  .card {
+    position: relative;
+    z-index: 1;
+  }
+  .card {
+    font-family: Georgia, serif;
+    background: linear-gradient(180deg, #ffd400 0%, #ff9d20 55%, #f07a12 100%);
+    padding: 32px 18px;
+    border-radius: 24px;
+    text-align: center;
+    color: #5c2b00;
+    max-width: 460px;
+    width: 100%;
+    margin: 24px;
+    box-sizing: border-box;
+    box-shadow: 0 12px 40px rgba(92, 43, 0, 0.45), 0 0 0 6px rgba(255, 242, 217, 0.9);
+  }
+  .card img {
+    width: 112px;
+    height: 112px;
+    border-radius: 50%;
+    background: #fff;
+    object-fit: cover;
+    border: 4px solid #fff;
+  }
+  .card h1 {
+    font-size: 26px;
+    margin: 14px 0 6px;
+    font-weight: 700;
+  }
+  .card p {
+    margin: 0 auto 22px;
+    max-width: 320px;
+    font-size: 15px;
+  }
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    max-width: 420px;
+    margin: 0 auto;
+  }
+  .lz-link {
+    display: block;
+    background: #fff;
+    color: #1a1a1a;
+    border: 3px solid #1a1a1a;
+    border-radius: 999px;
+    padding: 14px 18px;
+    text-decoration: none;
+    font-size: 15px;
+    box-shadow: 0 4px 0 #1a1a1a;
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+  }
+  .lz-link:hover {
+    transform: translateY(2px);
+    box-shadow: 0 2px 0 #1a1a1a;
+  }
+</style>
+</head>
+<body>
+  <div class="lz-bg">
+    <div class="lz-item" style="top:6%; left:8%; font-size:34px;">👟</div>
+    <div class="lz-item" style="top:12%; left:78%; width:76px; height:76px; font-size:32px;">🎧</div>
+    <div class="lz-item" style="top:38%; left:4%; width:70px; height:70px; font-size:30px;">💄</div>
+    <div class="lz-item" style="top:44%; left:86%; font-size:36px;">📱</div>
+    <div class="lz-item" style="top:68%; left:6%; font-size:36px;">👜</div>
+    <div class="lz-item" style="top:74%; left:80%; width:80px; height:80px; font-size:34px;">⌚</div>
+    <div class="lz-item" style="top:2%; left:44%; width:64px; height:64px; font-size:28px;">🎁</div>
+    <div class="lz-item" style="top:88%; left:40%; width:72px; height:72px; font-size:30px;">🛒</div>
+    <div class="lz-item" style="top:24%; left:30%; width:60px; height:60px; font-size:26px; opacity:0.7;">🧴</div>
+    <div class="lz-item" style="top:58%; left:60%; width:60px; height:60px; font-size:26px; opacity:0.7;">🕶️</div>
+  </div>
+  <div class="card">
+    <img src="https://id-preview--5adad2cc-d6e6-4d44-a8a3-36238f62b464.lovable.app/__l5e/assets-v1/1cfb2982-bbfd-49bd-bc0b-6d2854b95621/luiza-transparent.png" alt="Luiza das Promoções" />
+    <h1>Luiza das Promoções</h1>
+    <p>👑 A mulher que vai te fazer economizar MUITO dinheiro. 🧡 Entre nos Grupos!</p>
+    <div class="links">
+      <a class="lz-link" href="https://chat.whatsapp.com/KgrQVFTmqAe3fEsx79NuRb" target="_blank" rel="noopener">Grupo de Whatsapp</a>
+      <a class="lz-link" href="https://t.me/+6uwiK_sWq6Y2ZDcx" target="_blank" rel="noopener">Grupo no Telegram</a>
+    </div>
+  </div>
+</body>
+</html>
